@@ -1,0 +1,5 @@
+name: UHCRun
+main: net.Legacy.Main
+version: 1.0
+commands:
+   force-start:
