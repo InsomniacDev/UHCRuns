@@ -34,7 +34,7 @@ public class StartCountdown
             	board.resetScores("Temps : " + 14123);
             	
             	for(Player all : Bukkit.getServer().getOnlinePlayers()){
-            		all.getScoreboard().clearSlot(DisplaySlot.BELOW_NAME);
+            		all.getScoreboard().clearSlot(DisplaySlot.SIDEBAR); //mange mes couilles
 
             		all.setScoreboard(board);
             	}
