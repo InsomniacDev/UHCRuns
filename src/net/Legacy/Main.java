@@ -21,8 +21,8 @@ public class Main extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable(){
 		
-		StartCountdown.objective.setDisplaySlot(DisplaySlot.SIDEBAR);
-		StartCountdown.objective.setDisplayName(ChatColor.GOLD + "=== UHC Runs ===");
+		ScoreboardCooldown.objective.setDisplaySlot(DisplaySlot.SIDEBAR);
+		ScoreboardCooldown.objective.setDisplayName(ChatColor.GOLD + "=== UHC Run ===");
 		
 		instance = this;
 
@@ -49,7 +49,7 @@ public class Main extends JavaPlugin implements Listener {
 		
 		if (label.equalsIgnoreCase("force-start")) {
 			if (player.isOp()) {
-				StartCountdown.start(600, "");
+				ScoreboardCooldown.startCounter(player);
 			}
 		}
 		
